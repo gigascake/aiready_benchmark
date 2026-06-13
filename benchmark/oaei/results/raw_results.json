@@ -1,0 +1,558 @@
+{
+  "mode": "deterministic",
+  "elapsed_seconds": 3.1051058769226074,
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 86,
+    "fp": 0,
+    "fn": 0
+  },
+  "per_case": [
+    {
+      "case": "원가계산서_0101",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 43,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "case": "원가계산서_0227",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 43,
+      "fp": 0,
+      "fn": 0
+    }
+  ],
+  "system_alignments": {
+    "원가계산서_0101": [
+      {
+        "source": "재료비 계산내역::품명",
+        "target": "재료비 계산내역::Sub 품명",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::품번",
+        "target": "재료비 계산내역::Sub 품번",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::LOSS율",
+        "target": "재료비 계산내역::LOSS율 [%]",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::재료관리비",
+        "target": "재료비 계산내역::재료비 리비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::재질",
+        "target": "재료비 계산내역::재질명",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::U/S",
+        "target": "재료비 계산내역::END USG",
+        "confidence": 0.775
+      },
+      {
+        "source": "재료비 계산내역::단위",
+        "target": "재료비 계산내역::단위",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::소요량",
+        "target": "재료비 계산내역::사용량",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::단가",
+        "target": "재료비 계산내역::재료단가",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::금액",
+        "target": "재료비 계산내역::재료비",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품명",
+        "target": "가공비 계산내역::Sub 품명",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품번",
+        "target": "가공비 계산내역::Sub 품번",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::NET C/T",
+        "target": "가공비 계산내역::CYCLE TIME",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::준비시간",
+        "target": "가공비 계산내역::준비시간",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::LOT",
+        "target": "가공비 계산내역::LOT량",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::U/S",
+        "target": "가공비 계산내역::END USG율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::일반관리비",
+        "target": "가공비 계산내역::일반관리 리비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/V",
+        "target": "가공비 계산내역::CVT",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::인원",
+        "target": "가공비 계산내역::인원",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/T",
+        "target": "가공비 계산내역::C/Time",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::임율",
+        "target": "가공비 계산내역::임율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::금액",
+        "target": "가공비 계산내역::계",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품명",
+        "target": "가공비 계산내역::Sub 품명",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품번",
+        "target": "가공비 계산내역::Sub 품번",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::준비시간",
+        "target": "가공비 계산내역::준비시간",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::LOT",
+        "target": "가공비 계산내역::LOT량",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::U/S",
+        "target": "가공비 계산내역::END USG율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::일반관리비",
+        "target": "가공비 계산내역::일반관리 리비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/V",
+        "target": "가공비 계산내역::CVT",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/T",
+        "target": "가공비 계산내역::C/Time",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::경비",
+        "target": "가공비 계산내역::직접경비",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::간접경비율",
+        "target": "가공비 계산내역::간접 경비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::금액",
+        "target": "가공비 계산내역::계",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::재료비",
+        "target": "원가 요약::재료비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::노무비",
+        "target": "원가 요약::노무비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::경비",
+        "target": "원가 요약::경비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::가공비",
+        "target": "원가 요약::가공비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::제조원가",
+        "target": "원가 요약::제조원가",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::일반관리비",
+        "target": "원가 요약::일반관리비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::이윤",
+        "target": "원가 요약::이윤",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::재료관리비",
+        "target": "원가 요약::재료관리비 (외관비 포함)",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::외주재료관리비",
+        "target": "원가 요약::재료관리비 (외관비 포함)",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::금형비",
+        "target": "원가 요약::금형비(원)",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::R&D비용",
+        "target": "원가 요약::연구개발비, 로열티비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::폐기비",
+        "target": "원가 요약::서열비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::운반비",
+        "target": "원가 요약::운반비& 파렛트비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::불량비",
+        "target": "원가 요약::불량비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::조사가격",
+        "target": "원가 요약::계산단가",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::조정가",
+        "target": "원가 요약::조정단가",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::보호랩",
+        "target": "원가 요약::LP",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::기타비",
+        "target": "원가 요약::기타비1",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::결정가",
+        "target": "원가 요약::결정단가",
+        "confidence": 0.99
+      }
+    ],
+    "원가계산서_0227": [
+      {
+        "source": "재료비 계산내역::품명",
+        "target": "재료비 계산내역::Sub 품명",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::품번",
+        "target": "재료비 계산내역::Sub 품번",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::LOSS율",
+        "target": "재료비 계산내역::LOSS율 [%]",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::재료관리비",
+        "target": "재료비 계산내역::재료비 리비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::재질",
+        "target": "재료비 계산내역::재질명",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::U/S",
+        "target": "재료비 계산내역::END USG",
+        "confidence": 0.775
+      },
+      {
+        "source": "재료비 계산내역::단위",
+        "target": "재료비 계산내역::단위",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::소요량",
+        "target": "재료비 계산내역::사용량",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::단가",
+        "target": "재료비 계산내역::재료단가",
+        "confidence": 0.99
+      },
+      {
+        "source": "재료비 계산내역::금액",
+        "target": "재료비 계산내역::재료비",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품명",
+        "target": "가공비 계산내역::Sub 품명",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품번",
+        "target": "가공비 계산내역::Sub 품번",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::NET C/T",
+        "target": "가공비 계산내역::CYCLE TIME",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::준비시간",
+        "target": "가공비 계산내역::준비시간",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::LOT",
+        "target": "가공비 계산내역::LOT량",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::U/S",
+        "target": "가공비 계산내역::END USG율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::일반관리비",
+        "target": "가공비 계산내역::일반관리 리비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/V",
+        "target": "가공비 계산내역::CVT",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::인원",
+        "target": "가공비 계산내역::인원",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/T",
+        "target": "가공비 계산내역::C/Time",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::임율",
+        "target": "가공비 계산내역::임율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::금액",
+        "target": "가공비 계산내역::계",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품명",
+        "target": "가공비 계산내역::Sub 품명",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::품번",
+        "target": "가공비 계산내역::Sub 품번",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::준비시간",
+        "target": "가공비 계산내역::준비시간",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::LOT",
+        "target": "가공비 계산내역::LOT량",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::U/S",
+        "target": "가공비 계산내역::END USG율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::일반관리비",
+        "target": "가공비 계산내역::일반관리 리비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/V",
+        "target": "가공비 계산내역::CVT",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::C/T",
+        "target": "가공비 계산내역::C/Time",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::경비",
+        "target": "가공비 계산내역::직접경비",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::간접경비율",
+        "target": "가공비 계산내역::간접 경비율",
+        "confidence": 0.99
+      },
+      {
+        "source": "가공비 계산내역::금액",
+        "target": "가공비 계산내역::계",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::재료비",
+        "target": "원가 요약::재료비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::노무비",
+        "target": "원가 요약::노무비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::경비",
+        "target": "원가 요약::경비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::가공비",
+        "target": "원가 요약::가공비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::제조원가",
+        "target": "원가 요약::제조원가",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::일반관리비",
+        "target": "원가 요약::일반관리비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::이윤",
+        "target": "원가 요약::이윤",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::재료관리비",
+        "target": "원가 요약::재료관리비 (외관비 포함)",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::외주재료관리비",
+        "target": "원가 요약::재료관리비 (외관비 포함)",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::금형비",
+        "target": "원가 요약::금형비(원)",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::R&D비용",
+        "target": "원가 요약::연구개발비, 로열티비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::폐기비",
+        "target": "원가 요약::서열비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::운반비",
+        "target": "원가 요약::운반비& 파렛트비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::불량비",
+        "target": "원가 요약::불량비",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::조사가격",
+        "target": "원가 요약::계산단가",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::조정가",
+        "target": "원가 요약::조정단가",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::보호랩",
+        "target": "원가 요약::LP",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::기타비",
+        "target": "원가 요약::기타비1",
+        "confidence": 0.99
+      },
+      {
+        "source": "원가 요약::결정가",
+        "target": "원가 요약::결정단가",
+        "confidence": 0.99
+      }
+    ]
+  }
+}

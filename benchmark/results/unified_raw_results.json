@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-06-14 00:31:24",
+  "total_elapsed_seconds": 11.202485799789429,
+  "use_llm": false,
+  "oaei": {
+    "precision": 0,
+    "recall": 0,
+    "f1": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0
+  },
+  "llmstructbench": {
+    "extraction_f1_micro": 0.9971727153086034,
+    "extraction_doc_micro": 0.0,
+    "extraction_composite": 0.4985863576543017,
+    "mapping_f1_micro": 0.7948761291379457,
+    "mapping_doc_micro": 0.16666666666666666,
+    "mapping_composite": 0.48077139790230616
+  },
+  "matcher_oracle": {
+    "phase1_f1": 1.0,
+    "oracle_f1": 1.0,
+    "oracle_delta": 0.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "youden_index": 1.0,
+    "grade": "S",
+    "llm_calls": 0,
+    "total_candidates": 104,
+    "best_mode": "Det",
+    "evaluations": {
+      "None": {
+        "phase1_f1": 1.0,
+        "oracle_f1": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "youden_index": 1.0,
+        "llm_calls": 0
+      },
+      "Det": {
+        "phase1_f1": 1.0,
+        "oracle_f1": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "youden_index": 1.0,
+        "llm_calls": 0
+      }
+    }
+  },
+  "gap_analysis": {
+    "engine_avg": 0.9985863576543017,
+    "engine_grade": "S",
+    "wins": 19,
+    "total_comparable": 19,
+    "win_rate": 1.0
+  }
+}

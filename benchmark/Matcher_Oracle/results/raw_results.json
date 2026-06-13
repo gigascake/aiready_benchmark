@@ -1,0 +1,74 @@
+{
+  "elapsed_seconds": 6.66888427734375,
+  "use_llm": false,
+  "total_candidates": 104,
+  "total_uncertain": 2,
+  "tier_distribution": {
+    "T0": 102,
+    "T2": 2
+  },
+  "evaluations": {
+    "None": {
+      "mode": "None",
+      "phase1_f1": 1.0,
+      "phase2_f1": 1.0,
+      "oracle_delta": 0.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "youden_index": 1.0,
+      "tp_confirmed": 0,
+      "fn_oracle": 0,
+      "fp_confirmed": 0,
+      "tn_rejected": 0,
+      "llm_calls": 0,
+      "grade": "S",
+      "oracle_equivalent": "Or_0"
+    },
+    "Det": {
+      "mode": "Det",
+      "phase1_f1": 1.0,
+      "phase2_f1": 1.0,
+      "oracle_delta": 0.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "youden_index": 1.0,
+      "tp_confirmed": 2,
+      "fn_oracle": 0,
+      "fp_confirmed": 0,
+      "tn_rejected": 0,
+      "llm_calls": 0,
+      "grade": "S",
+      "oracle_equivalent": "Or_0"
+    }
+  },
+  "simulated_oracle": {
+    "Or_0": {
+      "oracle_f1": 1.0,
+      "youden_index": 1.0
+    },
+    "Or_5": {
+      "oracle_f1": 0.9761904761904763,
+      "youden_index": 0.9615384615384617
+    },
+    "Or_10": {
+      "oracle_f1": 0.951219512195122,
+      "youden_index": 0.9230769230769231
+    },
+    "Or_15": {
+      "oracle_f1": 0.9382716049382717,
+      "youden_index": 0.9038461538461537
+    },
+    "Or_20": {
+      "oracle_f1": 0.9113924050632911,
+      "youden_index": 0.8653846153846154
+    },
+    "Or_25": {
+      "oracle_f1": 0.868421052631579,
+      "youden_index": 0.7884615384615383
+    },
+    "Or_30": {
+      "oracle_f1": 0.8219178082191781,
+      "youden_index": 0.6923076923076923
+    }
+  }
+}

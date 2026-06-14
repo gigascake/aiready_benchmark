@@ -3,7 +3,7 @@
 
 # 통합 벤치마크 종합 레포트 / Unified Benchmark Report
 
-**날짜**: 2026-06-14 00:31:24
+**날짜**: 2026-06-14 21:13:59
 
 **엔진**: CostReady v0.9 (8-Tier + DM + Validator)
 
@@ -17,10 +17,10 @@
 
 | Benchmark | Metric | Engine Score | Best LLM | Gap |
 |-----------|--------|:-----------:|----------|-----|
-| OAEI | F1 | **0.0000** | GPT-5.4 (0.8700) | -0.8700 |
+| OAEI | F1 | **1.0000** | GPT-5.4 (0.8700) | +0.1300 |
 | LLMStructBench | F1_micro | **0.9972** | GPT-5.4 (0.8700) | +0.1272 |
 | Matcher-Oracle | Oracle F1 | **1.0000** | GPT-5.4 (0.9420) | +0.0580 |
-| **Average** | **3-Bench Avg** | **0.9986** [S] | — | — |
+| **Average** | **3-Bench Avg** | **0.9991** [S] | — | — |
 
 
 ## 2. 벤치마크 통합 비교표 / Cross-Benchmark Comparison
@@ -31,7 +31,7 @@
 
 | Rank | System | Type | OAEI F1 | StructBench F1 | Oracle F1 | Avg F1 | Grade | Cost |
 |------|--------|------|---------|----------------|-----------|--------|-------|------|
-| — | **CostReady v0.9** | **Hybrid** | **—** | **0.9972** | **1.0000** | **0.9986** | **S** | **$0** |
+| — | **CostReady v0.9** | **Hybrid** | **1.0000** | **0.9972** | **1.0000** | **0.9991** | **S** | **$0** |
 | 1 | GPT-5.4 | Closed | 0.8700 | 0.8700 | 0.9420 | 0.8940 | A | 보통 |
 | 2 | Claude-Opus-4.7 | Closed | 0.8640 | 0.8640 | 0.9350 | 0.8877 | A | 낮음 |
 | 3 | GLM-5.1 | Open | 0.8660 | 0.8660 | 0.9250 | 0.8857 | A | 최상 |
@@ -52,10 +52,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Precision | 0.0000 |
-| Recall | 0.0000 |
-| F1 | **0.0000** |
-| TP / FP / FN | 0 / 0 / 0 |
+| Precision | 1.0000 |
+| Recall | 1.0000 |
+| F1 | **1.0000** |
+| TP / FP / FN | 86 / 0 / 0 |
 
 ### 3-2. LLMStructBench (셀 추출/맵핑 F1)
 
@@ -79,30 +79,31 @@
 
 | Model | OAEI Gap | StructBench Gap | Oracle Gap | Avg Gap |
 |-------|----------|-----------------|------------|---------|
-| GPT-5.4 | — | +0.1272 | +0.0580 | +0.1046 |
-| Claude-Opus-4.7 | — | +0.1332 | +0.0650 | +0.1109 |
-| GLM-5.1 | — | +0.1312 | +0.0750 | +0.1129 |
-| Gemini-3.1-Pro | — | +0.1282 | +0.0820 | +0.1133 |
-| GLM-4.7 | — | +0.1362 | +0.0900 | +0.1213 |
-| Gemini-2.5-Flash | — | +0.1372 | +0.1160 | +0.1306 |
-| Qwen3.5-35B | — | +0.1362 | +0.1210 | +0.1316 |
-| GPT-5.5 | — | +0.1372 | — | +0.1386 |
-| Gemma-3-27B | — | +0.1502 | +0.1850 | +0.1623 |
-| DS-R1-Distill-32B | — | +0.1702 | +0.2100 | +0.1839 |
+| GPT-5.4 | +0.1300 | +0.1272 | +0.0580 | +0.1051 |
+| Claude-Opus-4.7 | +0.1360 | +0.1332 | +0.0650 | +0.1114 |
+| GLM-5.1 | +0.1340 | +0.1312 | +0.0750 | +0.1134 |
+| Gemini-3.1-Pro | +0.1310 | +0.1282 | +0.0820 | +0.1137 |
+| GLM-4.7 | +0.1390 | +0.1362 | +0.0900 | +0.1217 |
+| Gemini-2.5-Flash | +0.1400 | +0.1372 | +0.1160 | +0.1311 |
+| Qwen3.5-35B | +0.1390 | +0.1362 | +0.1210 | +0.1321 |
+| GPT-5.5 | +0.1400 | +0.1372 | — | +0.1391 |
+| Gemma-3-27B | +0.1530 | +0.1502 | +0.1850 | +0.1627 |
+| DS-R1-Distill-32B | +0.1730 | +0.1702 | +0.2100 | +0.1844 |
 
 | Metric | Value |
 |--------|-------|
-| Engine Average F1 | **0.9986** [S] |
-| Win Rate | **19/19** (100.0%) |
+| Engine Average F1 | **0.9991** [S] |
+| Win Rate | **29/29** (100.0%) |
 
 ### 자동 산출 인사이트 / Auto-generated Insights
 
-1. Engine average F1 across 3 benchmarks: **0.9986** [S] — 최상위 / Supreme
-2. vs best LLM (GPT-5.4, avg=0.8940): **+0.1046** average gap
-3. Engine outperforms LLMs in **19/19** benchmark-model pairs (100.0% win rate)
-4. LLMStructBench: Engine=0.9972 vs best LLM(GPT-5.4)=0.8700 → gap +0.1272
-5. Matcher-Oracle: Engine=1.0000 vs best LLM(GPT-5.4)=0.9420 → gap +0.0580
-6. Engine cost: **$0** (self-hosted, deterministic core). LLM API costs: 보통/높음/최상/낮음/최상/최상/보통/최상/보통/보통
+1. Engine average F1 across 3 benchmarks: **0.9991** [S] — 최상위 / Supreme
+2. vs best LLM (GPT-5.4, avg=0.8940): **+0.1051** average gap
+3. Engine outperforms LLMs in **29/29** benchmark-model pairs (100.0% win rate)
+4. OAEI: Engine=1.0000 vs best LLM(GPT-5.4)=0.8700 → gap +0.1300
+5. LLMStructBench: Engine=0.9972 vs best LLM(GPT-5.4)=0.8700 → gap +0.1272
+6. Matcher-Oracle: Engine=1.0000 vs best LLM(GPT-5.4)=0.9420 → gap +0.0580
+7. Engine cost: **$0** (self-hosted, deterministic core). LLM API costs: 보통/높음/최상/낮음/최상/최상/보통/최상/보통/보통
 
 
 ## 5. 아키텍처 우위 분석 / Architecture Advantage
@@ -110,7 +111,7 @@
 
 | Dimension | CostReady (Hybrid) | Pure LLM | Advantage |
 |-----------|-------------------|----------|-----------|
-| **Matching** | 8-Tier Deterministic (T0a-T5) | LLM full inference | LLM wins (F1: 0.0000 vs 0.882) |
+| **Matching** | 8-Tier Deterministic (T0a-T5) | LLM full inference | Engine wins (F1: 1.0000 vs 0.882) |
 | **Extraction** | 9-Phase Pipeline | LLM JSON generation | Engine wins (F1: 0.9972 vs 0.914) |
 | **Verification** | M1-M5 Deterministic | LLM self-check | Engine: 44 codes, 0 LLM calls, $0 cost |
 | **Cost** | $0 (self-hosted) | $0.15~75/M tokens | **$0 vs $$$** |
@@ -121,13 +122,12 @@
 ## 6. 260610 비교표 업데이트 텍스트 / Update Text
 
 
-
 ### 종합 성능 비교표 (3-벤치마크 통합)
 
 
 | Rank | System | Type | OAEI F1 | StructBench F1 | Oracle F1 | Avg F1 | Grade | Cost |
 |------|--------|------|---------|----------------|-----------|--------|-------|------|
-| — | **CostReady v0.9** | **Hybrid** | **—** | **0.9972** | **1.0000** | **0.9986** | **S** | **$0** |
+| — | **CostReady v0.9** | **Hybrid** | **1.0000** | **0.9972** | **1.0000** | **0.9991** | **S** | **$0** |
 | 1 | GPT-5.4 | Closed | 0.8700 | 0.8700 | 0.9420 | 0.8940 | A | 보통 |
 | 2 | Claude-Opus-4.7 | Closed | 0.8640 | 0.8640 | 0.9350 | 0.8877 | A | 낮음 |
 | 3 | GLM-5.1 | Open | 0.8660 | 0.8660 | 0.9250 | 0.8857 | A | 최상 |
@@ -152,4 +152,4 @@
 
 - **모든 수치는 자동 산출**: Gap 분석(Section 4)은 하드코딩 없이 실제 측정값에서 자동 계산됨.
 
-- **레포트 생성**: `excel_ready/benchmark/run_all.py` (2026-06-14 00:31:24 실행)
+- **레포트 생성**: `excel_ready/benchmark/run_all.py` (2026-06-14 21:13:59 실행)

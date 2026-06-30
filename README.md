@@ -1,9 +1,6 @@
-# aiready_benchmark
-`AI READY` Core Engine Benchmark
-
 # 통합 벤치마크 종합 레포트 / Unified Benchmark Report
 
-**날짜**: 2026-06-14 21:13:59
+**날짜**: 2026-07-01 01:41:03
 
 **엔진**: CostReady v0.9 (8-Tier + DM + Validator)
 
@@ -62,8 +59,8 @@
 
 | Task | F1_micro | DOC_micro | Composite |
 |------|----------|-----------|-----------|
-| Extraction | 0.9972 | 0.0000 | 0.4986 |
-| Mapping | 0.7949 | 0.1667 | 0.4808 |
+| Extraction | 0.9972 | 0.5000 | 0.7486 |
+| Mapping | 1.0000 | 1.0000 | 1.0000 |
 
 ### 3-3. Matcher-Oracle (2-Phase Oracle 검증)
 
@@ -119,7 +116,7 @@
 | **Hallucination** | 0 (deterministic core) | Variable (temperature dependent) | **Engine: 0 risk** |
 
 
-## 6. 260610 비교표 업데이트 텍스트 / Update Text
+## 6. 260701 비교표 업데이트 텍스트 / Update Text
 
 
 ### 종합 성능 비교표 (3-벤치마크 통합)
@@ -152,4 +149,4 @@
 
 - **모든 수치는 자동 산출**: Gap 분석(Section 4)은 하드코딩 없이 실제 측정값에서 자동 계산됨.
 
-- **레포트 생성**: `excel_ready/benchmark/run_all.py` (2026-06-14 21:13:59 실행)
+- **레포트 생성**: `ai_ready/benchmark/run_all.py` (2026-07-01 01:41:03 실행)
